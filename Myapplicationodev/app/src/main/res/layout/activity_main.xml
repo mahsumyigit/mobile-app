@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yariismaa"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="27dp"
+        android:text="Knowledge Competition"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Let the competition begin" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start_quiz"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_category"
+        android:layout_alignStart="@+id/button_start_quiz"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>
